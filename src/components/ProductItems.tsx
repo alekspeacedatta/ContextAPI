@@ -33,4 +33,5 @@ const ProductItems = () => {
         </div>
     )
 }
+
 export default ProductItems
