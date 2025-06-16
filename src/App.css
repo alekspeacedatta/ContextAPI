@@ -3,6 +3,13 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  z-index: 1;
+  transition: .3s ease;
+  overflow: hidden;
+  position: relative;
 }
 
 .logo {

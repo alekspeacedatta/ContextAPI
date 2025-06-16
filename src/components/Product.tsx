@@ -3,17 +3,16 @@ import { useProduct } from "../contexts/ProductContext";
 import { useTheme } from "../contexts/ThemeContext";
 const Product = ({product}) => {
 
-    const {addToCart, removeFromCart} = useProduct();
+    const {cartItems, addToCart, removeFromCart} = useProduct();
     const {textColor} = useTheme();
-    const [isInCart, setIsInCart] = useState(false);
+
+    const isInCart = cartItems.some(item => item.id === product.id)
 
     const handleCartAction = () => {
         if(isInCart){
             removeFromCart(product);
-            setIsInCart(false);
         } else {
             addToCart(product);
-            setIsInCart(true);
         }   
     }
     return (
@@ -27,7 +26,7 @@ const Product = ({product}) => {
                     background: isInCart ? "red" : 'green'
                 }}
             >
-                {isInCart ? "remove from cart" : "add to cart"}
+                {isInCart  ? "remove from cart" : "add to cart"}
             </button>
         </div>
     )
