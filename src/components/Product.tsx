@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { useProduct } from "../contexts/ProductContext";
 import { useTheme } from "../contexts/ThemeContext";
 const Product = ({product}) => {

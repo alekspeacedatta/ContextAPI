@@ -1,4 +1,4 @@
-import { useContext, type ReactNode } from "react"
+import { type ReactNode } from "react"
 import { useProduct } from "../contexts/ProductContext"
 import { useTheme } from "../contexts/ThemeContext";
 const Cart = () => {

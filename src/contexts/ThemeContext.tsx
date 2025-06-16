@@ -1,6 +1,6 @@
-import { useContext, useState, ReactNode, createContext } from "react"
+import { useContext, useState, type ReactNode, createContext } from "react"
 
-type Theme = 'white' | 'black';
+type Theme = 'white' | '#1b1b1b';
 interface ThemeContextType {
     isSlided: number;
     textColor: Theme;
@@ -14,10 +14,10 @@ export const ThemeContext = createContext<ThemeContextType | undefined>(undefine
 export const ThemeProvider = ({children} : {children:ReactNode}) => {
     const [isSlided, setIsSlided] = useState(-325);
     const [theme, setTheme] = useState<Theme>('white');
-    const [textColor, setTextColor] = useState<Theme>('black');
+    const [textColor, setTextColor] = useState<Theme>('#1b1b1b');
     const toggleTheme = () => {
-        setTheme((prev) => (prev === 'white' ? 'black' : 'white'));
-        setTextColor((prev) => (prev === 'black' ? 'white' : 'black'));
+        setTheme((prev) => (prev === 'white' ? '#1b1b1b' : 'white'));
+        setTextColor((prev) => (prev === '#1b1b1b' ? 'white' : '#1b1b1b'));
     }
     const cartClick = () => {
         setIsSlided((prev) => (prev === -325 ? 0 : -325));

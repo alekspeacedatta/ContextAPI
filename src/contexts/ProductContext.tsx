@@ -1,4 +1,4 @@
-import {createContext, useState, ReactNode, useContext} from "react";
+import {createContext, useState, type ReactNode, useContext} from "react";
 export type Product = {
     id: number;
     name: string;
@@ -42,6 +42,7 @@ export const ProductProvider = ({children}: {children:ReactNode}) => {
     )
 }
 export const useProduct = () => {
+    
     const context = useContext(ProducContext);
     if(!context) throw new Error("error, context is not created");
     
