@@ -1,5 +1,5 @@
-import { useTheme } from "./ThemeContext"
-import { useProduct } from "./ProductContext";
+import { useTheme } from "../contexts/ThemeContext"
+import { useProduct } from "../contexts/ProductContext";
 const Footer = () => {
     
     const {totalAmount} = useProduct();

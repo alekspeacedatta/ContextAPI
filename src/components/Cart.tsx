@@ -1,5 +1,5 @@
 import { useContext, type ReactNode } from "react"
-import { useProduct } from "./ProductContext"
+import { useProduct } from "../contexts/ProductContext"
 const Cart = () => {
     
     const {cartCount} = useProduct();

@@ -1,5 +1,5 @@
 import Product from "./Product"
-import { useTheme } from "./ThemeContext";
+import { useTheme } from "../contexts/ThemeContext";
 const products = [
     {
         id: 1,

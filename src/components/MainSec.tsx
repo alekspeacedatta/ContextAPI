@@ -1,4 +1,4 @@
-import { useTheme } from "./ThemeContext"
+import { useTheme } from "../contexts/ThemeContext"
 import ProductItems from "./ProductItems";
 const MainSec = () => {
     const { theme, textColor } = useTheme();

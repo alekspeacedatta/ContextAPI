@@ -1,6 +1,6 @@
 import { useState } from "react"
-import { useProduct } from "./ProductContext";
-import { useTheme } from "./ThemeContext";
+import { useProduct } from "../contexts/ProductContext";
+import { useTheme } from "../contexts/ThemeContext";
 const Product = ({product}) => {
 
     const {addToCart, removeFromCart} = useProduct();
