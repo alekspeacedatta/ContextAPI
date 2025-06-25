@@ -27,7 +27,6 @@ export const ThemeProvider = ({children} : {children:ReactNode}) => {
             {children}
         </ThemeContext.Provider>
     )
-    
 }
 export const useTheme = () => {
     const context = useContext(ThemeContext);

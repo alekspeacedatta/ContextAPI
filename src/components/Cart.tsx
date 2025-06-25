@@ -9,7 +9,7 @@ const Cart = () => {
         cartClick();
     }
     return (
-    <div className="cart" onClick={handleCartClick}>Cart {cartCount as ReactNode}</div>
+        <div className="cart" onClick={handleCartClick}>Cart {cartCount as ReactNode}</div>
     )
 }
 export default Cart

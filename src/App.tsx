@@ -10,16 +10,16 @@ function App() {
 
   return (
     <>
-      <ProductProvider>
         <ThemeProvider>
+      <ProductProvider>
             <div style={{padding: 0}}>
               <Header/>
               <MainSec/>
               <Footer/>
             </div>
             <SideCartPanel/>
-        </ThemeProvider>
       </ProductProvider>
+        </ThemeProvider>
     </>
   )
 }

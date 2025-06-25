@@ -30,6 +30,7 @@ export const ProductProvider = ({children}: {children:ReactNode}) => {
         setCartCount(prev => prev - 1);
         setTotalAmount(prev => prev - product.price)
     }
+    
     const removeAll = () => {
         setCartItems([]);
         setCartCount(0);
